@@ -1,0 +1,3033 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='mac' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <DashboardGridOverlay />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='Netflixf' path='/workbooks' revision='1.1' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='tvshow_seasons' inline='true' name='federated.0kmdf2d0c7zdfn14l1kt20n7loqc' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='tvshow_seasons' name='textscan.1rc5b9b1oz15vl1dtir5j1weps7b'>
+            <connection class='textscan' directory='/Users/aaratmapara/Desktop/Files/Courses/Google advance data analytics /Project/netflix-content-analysis/data' filename='tvshow_seasons.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1rc5b9b1oz15vl1dtir5j1weps7b' name='tvshow_seasons.csv' table='[tvshow_seasons#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='title' ordinal='0' />
+            <column datatype='integer' name='seasons' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[tvshow_seasons.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[tvshow_seasons.csv]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[tvshow_seasons.csv_2DA02555AD7540CB831ECDB2B16BFDA4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>seasons</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[seasons]</local-name>
+            <parent-name>[tvshow_seasons.csv]</parent-name>
+            <remote-alias>seasons</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tvshow_seasons.csv_2DA02555AD7540CB831ECDB2B16BFDA4]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='tvshow_seasons.csv' datatype='table' name='[__tableau_internal_object_id__].[tvshow_seasons.csv_2DA02555AD7540CB831ECDB2B16BFDA4]' role='measure' type='quantitative' />
+      <column caption='Seasons' datatype='integer' name='[seasons]' role='measure' type='quantitative' />
+      <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/mq/d1n782053r706tdhg5yldhbh0000gn/T/tableau-temp/#TableauTemp_06e1w7011j2b641dwca3j1mcbvnp.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/07/2025 12:14:21 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>title</remote-alias>
+              <ordinal>0</ordinal>
+              <family>tvshow_seasons.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1000</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>seasons</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[seasons]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>seasons</remote-alias>
+              <ordinal>1</ordinal>
+              <family>tvshow_seasons.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='tvshow_seasons.csv' id='tvshow_seasons.csv_2DA02555AD7540CB831ECDB2B16BFDA4'>
+            <properties context=''>
+              <relation connection='textscan.1rc5b9b1oz15vl1dtir5j1weps7b' name='tvshow_seasons.csv' table='[tvshow_seasons#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='title' ordinal='0' />
+                  <column datatype='integer' name='seasons' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='content_per_year_by_type' inline='true' name='federated.0hz2afw0rfzvxi14c4yfs0gyhbzp' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='content_per_year_by_type' name='textscan.11cfxge1fycy7714awnc50evq0ap'>
+            <connection class='textscan' directory='/Users/aaratmapara/Desktop/Files/Courses/Google advance data analytics /Project/netflix-content-analysis/data' filename='content_per_year.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.11cfxge1fycy7714awnc50evq0ap' name='content_per_year_by_type.csv' table='[content_per_year_by_type#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='year_added' ordinal='0' />
+            <column datatype='integer' name='movies_added' ordinal='1' />
+            <column datatype='integer' name='tv_shows_added' ordinal='2' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[content_per_year_by_type.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year_added</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year_added]</local-name>
+            <parent-name>[content_per_year_by_type.csv]</parent-name>
+            <remote-alias>year_added</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[content_per_year_by_type.csv_1DC5A180A9DE4D26823C6FD97A29C7B9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>movies_added</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[movies_added]</local-name>
+            <parent-name>[content_per_year_by_type.csv]</parent-name>
+            <remote-alias>movies_added</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[content_per_year_by_type.csv_1DC5A180A9DE4D26823C6FD97A29C7B9]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tv_shows_added</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[tv_shows_added]</local-name>
+            <parent-name>[content_per_year_by_type.csv]</parent-name>
+            <remote-alias>tv_shows_added</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[content_per_year_by_type.csv_1DC5A180A9DE4D26823C6FD97A29C7B9]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='content_per_year_by_type.csv' datatype='table' name='[__tableau_internal_object_id__].[content_per_year_by_type.csv_1DC5A180A9DE4D26823C6FD97A29C7B9]' role='measure' type='quantitative' />
+      <column caption='Movies Added' datatype='integer' name='[movies_added]' role='measure' type='quantitative' />
+      <column caption='Tv Shows Added' datatype='integer' name='[tv_shows_added]' role='measure' type='quantitative' />
+      <column caption='Year Added' datatype='integer' name='[year_added]' role='dimension' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[content_per_year_by_type.csv_1DC5A180A9DE4D26823C6FD97A29C7B9]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:content_per_year_by_type.csv_1DC5A180A9DE4D26823C6FD97A29C7B9:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[movies_added]' derivation='Sum' name='[pcto:sum:movies_added:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[tv_shows_added]' derivation='Sum' name='[pcto:sum:tv_shows_added:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[movies_added]' derivation='Sum' name='[sum:movies_added:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[tv_shows_added]' derivation='Sum' name='[sum:tv_shows_added:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/mq/d1n782053r706tdhg5yldhbh0000gn/T/tableau-temp/#TableauTemp_12e7p6f0j5mfrg13d4n080q9n8d7.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/07/2025 12:15:14 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>year_added</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[year_added]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year_added</remote-alias>
+              <ordinal>0</ordinal>
+              <family>content_per_year_by_type.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>movies_added</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[movies_added]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>movies_added</remote-alias>
+              <ordinal>1</ordinal>
+              <family>content_per_year_by_type.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tv_shows_added</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[tv_shows_added]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tv_shows_added</remote-alias>
+              <ordinal>2</ordinal>
+              <family>content_per_year_by_type.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[__tableau_internal_object_id__].[cnt:content_per_year_by_type.csv_1DC5A180A9DE4D26823C6FD97A29C7B9:qk]&quot;</bucket>
+            </map>
+            <map to='#da323f'>
+              <bucket>&quot;[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[pcto:sum:tv_shows_added:qk]&quot;</bucket>
+            </map>
+            <map to='#da323f'>
+              <bucket>&quot;[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[sum:tv_shows_added:qk]&quot;</bucket>
+            </map>
+            <map to='#ffbeb2'>
+              <bucket>&quot;[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[pcto:sum:movies_added:qk]&quot;</bucket>
+            </map>
+            <map to='#ffbeb2'>
+              <bucket>&quot;[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[sum:movies_added:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='content_per_year_by_type.csv' id='content_per_year_by_type.csv_1DC5A180A9DE4D26823C6FD97A29C7B9'>
+            <properties context=''>
+              <relation connection='textscan.11cfxge1fycy7714awnc50evq0ap' name='content_per_year_by_type.csv' table='[content_per_year_by_type#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='year_added' ordinal='0' />
+                  <column datatype='integer' name='movies_added' ordinal='1' />
+                  <column datatype='integer' name='tv_shows_added' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='movies_vs_tv' inline='true' name='federated.071lumz1ec2e921b8l6el09l9322' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='movies_vs_tv' name='textscan.16txua31g9k4d91g6my8a03owunq'>
+            <connection class='textscan' directory='/Users/aaratmapara/Desktop/Files/Courses/Google advance data analytics /Project/netflix-content-analysis/data' filename='movies_vs_tv.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.16txua31g9k4d91g6my8a03owunq' name='movies_vs_tv.csv' table='[movies_vs_tv#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='type' ordinal='0' />
+            <column datatype='integer' name='count' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[movies_vs_tv.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[type]</local-name>
+            <parent-name>[movies_vs_tv.csv]</parent-name>
+            <remote-alias>type</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[movies_vs_tv.csv_DBCFBA1B58B44F8A84239B1C0E50DECD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[count]</local-name>
+            <parent-name>[movies_vs_tv.csv]</parent-name>
+            <remote-alias>count</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[movies_vs_tv.csv_DBCFBA1B58B44F8A84239B1C0E50DECD]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='movies_vs_tv.csv' datatype='table' name='[__tableau_internal_object_id__].[movies_vs_tv.csv_DBCFBA1B58B44F8A84239B1C0E50DECD]' role='measure' type='quantitative' />
+      <column caption='Count' datatype='integer' name='[count]' role='measure' type='quantitative' />
+      <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+      <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/mq/d1n782053r706tdhg5yldhbh0000gn/T/tableau-temp/#TableauTemp_0rjaduo0cyts091agzz1t15f019g.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/07/2025 12:15:28 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>type</remote-alias>
+              <ordinal>0</ordinal>
+              <family>movies_vs_tv.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>count</remote-alias>
+              <ordinal>1</ordinal>
+              <family>movies_vs_tv.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:type:nk]' type='palette'>
+            <map to='#d3293d'>
+              <bucket>&quot;Movie&quot;</bucket>
+            </map>
+            <map to='#ffbeb2'>
+              <bucket>&quot;TV Show&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='movies_vs_tv.csv' id='movies_vs_tv.csv_DBCFBA1B58B44F8A84239B1C0E50DECD'>
+            <properties context=''>
+              <relation connection='textscan.16txua31g9k4d91g6my8a03owunq' name='movies_vs_tv.csv' table='[movies_vs_tv#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='type' ordinal='0' />
+                  <column datatype='integer' name='count' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='ratings_distribution' inline='true' name='federated.0m0ac0e0l91m1t14oauqb066wx26' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ratings_distribution' name='textscan.0mt2bvc1qkp9b617ebgvd12frr5y'>
+            <connection class='textscan' directory='/Users/aaratmapara/Desktop/Files/Courses/Google advance data analytics /Project/netflix_movies and TV Shows/data' filename='ratings_distribution.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0mt2bvc1qkp9b617ebgvd12frr5y' name='ratings_distribution.csv' table='[ratings_distribution#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='rating' ordinal='0' />
+            <column datatype='integer' name='title_count' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[ratings_distribution.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rating</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[rating]</local-name>
+            <parent-name>[ratings_distribution.csv]</parent-name>
+            <remote-alias>rating</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ratings_distribution.csv_418167EC9655447EBDE76F49F65AA82C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[title_count]</local-name>
+            <parent-name>[ratings_distribution.csv]</parent-name>
+            <remote-alias>title_count</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ratings_distribution.csv_418167EC9655447EBDE76F49F65AA82C]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='ratings_distribution.csv' datatype='table' name='[__tableau_internal_object_id__].[ratings_distribution.csv_418167EC9655447EBDE76F49F65AA82C]' role='measure' type='quantitative' />
+      <column caption='Rating' datatype='string' name='[rating]' role='dimension' type='nominal' />
+      <column caption='Title Count' datatype='integer' name='[title_count]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/Users/aaratmapara/Documents/My Tableau Repository/Datasources/2025.2/en_US-APAC/#TableauTemp_15sd4qu1m9vlbx1dpiuws0ybujjc.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/04/2025 05:27:56 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>rating</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[rating]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>rating</remote-alias>
+              <ordinal>0</ordinal>
+              <family>ratings_distribution.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>title_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[title_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>title_count</remote-alias>
+              <ordinal>1</ordinal>
+              <family>ratings_distribution.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='ratings_distribution.csv' id='ratings_distribution.csv_418167EC9655447EBDE76F49F65AA82C'>
+            <properties context=''>
+              <relation connection='textscan.0mt2bvc1qkp9b617ebgvd12frr5y' name='ratings_distribution.csv' table='[ratings_distribution#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='rating' ordinal='0' />
+                  <column datatype='integer' name='title_count' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='top_genres' inline='true' name='federated.1bu2ij71qdu01m17vuj8q1q669m9' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='top_genres' name='textscan.02yde6o0ip1gdw105puer08v3w45'>
+            <connection class='textscan' directory='/Users/aaratmapara/Desktop/Files/Courses/Google advance data analytics /Project/netflix_movies and TV Shows/data' filename='top_genres.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.02yde6o0ip1gdw105puer08v3w45' name='top_genres.csv' table='[top_genres#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='genre' ordinal='0' />
+            <column datatype='integer' name='title_count' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[top_genres.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>genre</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[genre]</local-name>
+            <parent-name>[top_genres.csv]</parent-name>
+            <remote-alias>genre</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[top_genres.csv_CD5D43C8CB894A33B3230194CDF1BA40]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[title_count]</local-name>
+            <parent-name>[top_genres.csv]</parent-name>
+            <remote-alias>title_count</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[top_genres.csv_CD5D43C8CB894A33B3230194CDF1BA40]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='top_genres.csv' datatype='table' name='[__tableau_internal_object_id__].[top_genres.csv_CD5D43C8CB894A33B3230194CDF1BA40]' role='measure' type='quantitative' />
+      <column caption='Genre' datatype='string' name='[genre]' role='dimension' type='nominal' />
+      <column caption='Title Count' datatype='integer' name='[title_count]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/Users/aaratmapara/Documents/My Tableau Repository/Datasources/2025.2/en_US-APAC/#TableauTemp_1gk9fij0puaf9v163qedu1aqzy4y.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/04/2025 05:36:39 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>genre</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[genre]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>genre</remote-alias>
+              <ordinal>0</ordinal>
+              <family>top_genres.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[top_genres.csv_CD5D43C8CB894A33B3230194CDF1BA40]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>title_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[title_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>title_count</remote-alias>
+              <ordinal>1</ordinal>
+              <family>top_genres.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[top_genres.csv_CD5D43C8CB894A33B3230194CDF1BA40]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='top_genres.csv' id='top_genres.csv_CD5D43C8CB894A33B3230194CDF1BA40'>
+            <properties context=''>
+              <relation connection='textscan.02yde6o0ip1gdw105puer08v3w45' name='top_genres.csv' table='[top_genres#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='genre' ordinal='0' />
+                  <column datatype='integer' name='title_count' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='top_directors' inline='true' name='federated.0stzkpm1pkdjg316a8bpf0i6ryqj' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='top_directors' name='textscan.02cpv9k0bmit0c18idv2l01fyls1'>
+            <connection class='textscan' directory='/Users/aaratmapara/Desktop/Files/Courses/Google advance data analytics /Project/netflix_movies and TV Shows/data' filename='top_directors.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.02cpv9k0bmit0c18idv2l01fyls1' name='top_directors.csv' table='[top_directors#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='director' ordinal='0' />
+            <column datatype='integer' name='title_count' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[top_directors.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>director</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[director]</local-name>
+            <parent-name>[top_directors.csv]</parent-name>
+            <remote-alias>director</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[top_directors.csv_8261A9192C2448AAB6B1E997CFB17937]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[title_count]</local-name>
+            <parent-name>[top_directors.csv]</parent-name>
+            <remote-alias>title_count</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[top_directors.csv_8261A9192C2448AAB6B1E997CFB17937]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='top_directors.csv' datatype='table' name='[__tableau_internal_object_id__].[top_directors.csv_8261A9192C2448AAB6B1E997CFB17937]' role='measure' type='quantitative' />
+      <column caption='Director' datatype='string' name='[director]' role='dimension' type='nominal' />
+      <column caption='Title Count' datatype='integer' name='[title_count]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/Users/aaratmapara/Documents/My Tableau Repository/Datasources/2025.2/en_US-APAC/#TableauTemp_1l5mnzz1hzws5k1g8xtmr1l3yu6b.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/04/2025 05:48:02 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>director</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[director]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>director</remote-alias>
+              <ordinal>0</ordinal>
+              <family>top_directors.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>50</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>title_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[title_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>title_count</remote-alias>
+              <ordinal>1</ordinal>
+              <family>top_directors.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='top_directors.csv' id='top_directors.csv_8261A9192C2448AAB6B1E997CFB17937'>
+            <properties context=''>
+              <relation connection='textscan.02cpv9k0bmit0c18idv2l01fyls1' name='top_directors.csv' table='[top_directors#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='director' ordinal='0' />
+                  <column datatype='integer' name='title_count' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='freshness_by_year' inline='true' name='federated.0i0g2u40oxqwm71cjo2oj0vdz5cv' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='freshness_by_year' name='textscan.1f2lc2b1mt2ofv1dza2vl1yhe7na'>
+            <connection class='textscan' directory='/Users/aaratmapara/Desktop/Files/Courses/Google advance data analytics /Project/netflix_movies and TV Shows/data' filename='freshness_by_year.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1f2lc2b1mt2ofv1dza2vl1yhe7na' name='freshness_by_year.csv' table='[freshness_by_year#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='year_added' ordinal='0' />
+            <column datatype='real' name='avg_lag_years' ordinal='1' />
+            <column datatype='integer' name='titles_added' ordinal='2' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[freshness_by_year.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year_added</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year_added]</local-name>
+            <parent-name>[freshness_by_year.csv]</parent-name>
+            <remote-alias>year_added</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[freshness_by_year.csv_2AF54871A45E4C3DA53265CA6E1F9A2A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_lag_years</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_lag_years]</local-name>
+            <parent-name>[freshness_by_year.csv]</parent-name>
+            <remote-alias>avg_lag_years</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[freshness_by_year.csv_2AF54871A45E4C3DA53265CA6E1F9A2A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>titles_added</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[titles_added]</local-name>
+            <parent-name>[freshness_by_year.csv]</parent-name>
+            <remote-alias>titles_added</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[freshness_by_year.csv_2AF54871A45E4C3DA53265CA6E1F9A2A]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='freshness_by_year.csv' datatype='table' name='[__tableau_internal_object_id__].[freshness_by_year.csv_2AF54871A45E4C3DA53265CA6E1F9A2A]' role='measure' type='quantitative' />
+      <column caption='Avg Lag Years' datatype='real' name='[avg_lag_years]' role='measure' type='quantitative' />
+      <column caption='Titles Added' datatype='integer' name='[titles_added]' role='measure' type='quantitative' />
+      <column caption='Year Added' datatype='integer' name='[year_added]' role='dimension' type='quantitative' />
+      <column-instance column='[avg_lag_years]' derivation='Sum' name='[sum:avg_lag_years:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[titles_added]' derivation='Sum' name='[sum:titles_added:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/Users/aaratmapara/Documents/My Tableau Repository/Datasources/2025.2/en_US-APAC/#TableauTemp_0z0ctwk1tdeoy01089d2u0l011ym.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/04/2025 06:40:08 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>year_added</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[year_added]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year_added</remote-alias>
+              <ordinal>0</ordinal>
+              <family>freshness_by_year.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_lag_years</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_lag_years]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_lag_years</remote-alias>
+              <ordinal>1</ordinal>
+              <family>freshness_by_year.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>titles_added</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[titles_added]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>titles_added</remote-alias>
+              <ordinal>2</ordinal>
+              <family>freshness_by_year.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#da323f'>
+              <bucket>&quot;[federated.0i0g2u40oxqwm71cjo2oj0vdz5cv].[sum:titles_added:qk]&quot;</bucket>
+            </map>
+            <map to='#ffbeb2'>
+              <bucket>&quot;[federated.0i0g2u40oxqwm71cjo2oj0vdz5cv].[sum:avg_lag_years:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='freshness_by_year.csv' id='freshness_by_year.csv_2AF54871A45E4C3DA53265CA6E1F9A2A'>
+            <properties context=''>
+              <relation connection='textscan.1f2lc2b1mt2ofv1dza2vl1yhe7na' name='freshness_by_year.csv' table='[freshness_by_year#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='year_added' ordinal='0' />
+                  <column datatype='real' name='avg_lag_years' ordinal='1' />
+                  <column datatype='integer' name='titles_added' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='top_countries' inline='true' name='federated.0n58sz702gdymx1fmqlk41y8li0z' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='top_countries' name='textscan.11aynyg09bhpf7180pwmv1mqbvym'>
+            <connection class='textscan' directory='/Users/aaratmapara/Desktop/Files/Courses/Google advance data analytics /Project/netflix_movies and TV Shows/data' filename='top_countries.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.11aynyg09bhpf7180pwmv1mqbvym' name='top_countries.csv' table='[top_countries#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='country' ordinal='0' />
+            <column datatype='integer' name='title_count' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[top_countries.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[top_countries.csv]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[top_countries.csv_0AFDB970CCA94B348016D185295D6B2D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[title_count]</local-name>
+            <parent-name>[top_countries.csv]</parent-name>
+            <remote-alias>title_count</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[top_countries.csv_0AFDB970CCA94B348016D185295D6B2D]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='top_countries.csv' datatype='table' name='[__tableau_internal_object_id__].[top_countries.csv_0AFDB970CCA94B348016D185295D6B2D]' role='measure' type='quantitative' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Title Count' datatype='integer' name='[title_count]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/mq/d1n782053r706tdhg5yldhbh0000gn/T/tableau-temp/#TableauTemp_00tmywu0pct40q1c3mms71jsl8bm.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/07/2025 12:29:31 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>country</remote-alias>
+              <ordinal>0</ordinal>
+              <family>top_countries.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>title_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[title_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>title_count</remote-alias>
+              <ordinal>1</ordinal>
+              <family>top_countries.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='top_countries.csv' id='top_countries.csv_0AFDB970CCA94B348016D185295D6B2D'>
+            <properties context=''>
+              <relation connection='textscan.11aynyg09bhpf7180pwmv1mqbvym' name='top_countries.csv' table='[top_countries#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='country' ordinal='0' />
+                  <column datatype='integer' name='title_count' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='top_actors_first_billed' inline='true' name='federated.0xiha0019tze2m1d69n3f1exc6ca' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='top_actors_first_billed' name='textscan.15g26m40rhtxe3106qvpy1x5ervd'>
+            <connection class='textscan' directory='/Users/aaratmapara/Desktop/Files/Courses/Google advance data analytics /Project/netflix_movies and TV Shows/data' filename='top_actors_first_billed.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.15g26m40rhtxe3106qvpy1x5ervd' name='top_actors_first_billed.csv' table='[top_actors_first_billed#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='actor' ordinal='0' />
+            <column datatype='integer' name='title_count' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[top_actors_first_billed.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>actor</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[actor]</local-name>
+            <parent-name>[top_actors_first_billed.csv]</parent-name>
+            <remote-alias>actor</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[top_actors_first_billed.csv_793F1290601E48F587B54F0433BE1DA0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[title_count]</local-name>
+            <parent-name>[top_actors_first_billed.csv]</parent-name>
+            <remote-alias>title_count</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[top_actors_first_billed.csv_793F1290601E48F587B54F0433BE1DA0]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='top_actors_first_billed.csv' datatype='table' name='[__tableau_internal_object_id__].[top_actors_first_billed.csv_793F1290601E48F587B54F0433BE1DA0]' role='measure' type='quantitative' />
+      <column caption='Actor' datatype='string' name='[actor]' role='dimension' type='nominal' />
+      <column caption='Title Count' datatype='integer' name='[title_count]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/mq/d1n782053r706tdhg5yldhbh0000gn/T/tableau-temp/#TableauTemp_0kftpok0tppabi11j4bnc12w7m36.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/07/2025 12:47:27 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>actor</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[actor]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>actor</remote-alias>
+              <ordinal>0</ordinal>
+              <family>top_actors_first_billed.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>50</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>title_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[title_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>title_count</remote-alias>
+              <ordinal>1</ordinal>
+              <family>top_actors_first_billed.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='top_actors_first_billed.csv' id='top_actors_first_billed.csv_793F1290601E48F587B54F0433BE1DA0'>
+            <properties context=''>
+              <relation connection='textscan.15g26m40rhtxe3106qvpy1x5ervd' name='top_actors_first_billed.csv' table='[top_actors_first_billed#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='actor' ordinal='0' />
+                  <column datatype='integer' name='title_count' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='Logonetflix' inline='true' name='federated.0tt4y5415kivdc14npjo61mmt95c' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Logonetflix' name='pdf.0ee42eq14z0vn111piie50048c0d'>
+            <connection class='pdf' cleaning='no' compat='no' interpretationMode='257' origfilename='/Users/aaratmapara/Downloads/Logonetflix.pdf' password='' pgFrom='' pgTo='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+      </connection>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph />
+    </datasource>
+    <datasource caption='Logonetflix (2)' inline='true' name='federated.0zr3bfo10vhtxa1gjzpnd1kwubus' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Logonetflix' name='pdf.0ir62r70unamp511tp96y1pmlf7d'>
+            <connection class='pdf' cleaning='no' compat='no' interpretationMode='257' origfilename='/Users/aaratmapara/Downloads/Logonetflix.pdf' password='' pgFrom='1' pgTo='1' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+      </connection>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph />
+    </datasource>
+    <datasource caption='Logonetflix (3)' inline='true' name='federated.0hjmeo80v0g10e1grho4d1rm6zof' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Logonetflix' name='pdf.047oo9n171cts2195i6nc1i169gt'>
+            <connection class='pdf' cleaning='no' compat='no' interpretationMode='257' origfilename='/Users/aaratmapara/Downloads/Logonetflix.pdf' password='' pgFrom='' pgTo='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+      </connection>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph />
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1_6F3B84FE9C66451BB56A322BA1450D2E]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='NETFLIX CONTENT TRENDS DASHBOARD ' type='sheet' />
+      <command command='tsc:brush'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='NETFLIX CONTENT TRENDS DASHBOARD ' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Content added per year'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#ffffff'>Netflix content added per year</run>
+          </formatted-text>
+        </title>
+        <caption>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Tableau Light'>Netflix Content Added per Year (Bar Chart)</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#000000' fontname='Tableau Light'>Growth surged between </run>
+            <run bold='true' fontcolor='#000000' fontname='Tableau Light'>2015–2019</run>
+            <run fontcolor='#000000' fontname='Tableau Light'>, with over </run>
+            <run bold='true' fontcolor='#000000' fontname='Tableau Light'>2000 titles added in 2019 alone</run>
+            <run fontcolor='#000000' fontname='Tableau Light'>.</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#000000' fontname='Tableau Light'>After 2019, content additions declined slightly, suggesting a shift from aggressive expansion to selective quality-based curation. </run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='content_per_year_by_type' name='federated.0hz2afw0rfzvxi14c4yfs0gyhbzp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0hz2afw0rfzvxi14c4yfs0gyhbzp'>
+            <column caption='Movies Added' datatype='integer' name='[movies_added]' role='measure' type='quantitative' />
+            <column-instance column='[year_added]' derivation='None' name='[none:year_added:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[movies_added]' derivation='Sum' name='[pcto:sum:movies_added:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[movies_added]' derivation='Sum' name='[sum:movies_added:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[tv_shows_added]' derivation='Sum' name='[sum:tv_shows_added:qk]' pivot='key' type='quantitative' />
+            <column caption='Tv Shows Added' datatype='integer' name='[tv_shows_added]' role='measure' type='quantitative' />
+            <column caption='Year Added' datatype='integer' name='[year_added]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[sum:movies_added:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[sum:tv_shows_added:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='tick-color' field='[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[none:year_added:qk]' value='#ffffff' />
+            <format attr='tick-color' field='[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[Multiple Values]' value='#ffffff' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[none:year_added:qk]' value='#ffffff' />
+            <format attr='color' field='[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[Multiple Values]' value='#ffffff' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='auto' />
+                <format attr='wrap' value='auto' />
+                <format attr='text-align' value='center' />
+                <format attr='text-orientation' value='-90' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[Multiple Values]</rows>
+        <cols>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[none:year_added:qk]</cols>
+        <mark-labels>
+          <mark-label id='0'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[none:year_added:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[none:year_added:qk]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[pcto:sum:movies_added:qk]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[:Measure Names]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2017</value>
+                <value>0.13684553906377425</value>
+                <value>&quot;[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[sum:movies_added:qk]&quot;</value>
+                <value>839.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='0.1875' y='33' />
+          </mark-label>
+          <mark-label id='1'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[none:year_added:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[none:year_added:qk]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[pcto:sum:movies_added:qk]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[:Measure Names]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2018</value>
+                <value>0.20176153971619637</value>
+                <value>&quot;[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[sum:movies_added:qk]&quot;</value>
+                <value>1237.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='0.5625' y='33' />
+          </mark-label>
+          <mark-label id='2'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[none:year_added:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[none:year_added:qk]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[pcto:sum:movies_added:qk]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[:Measure Names]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2020</value>
+                <value>0.20942749959223617</value>
+                <value>&quot;[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[sum:movies_added:qk]&quot;</value>
+                <value>1284.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='0.375' y='27' />
+          </mark-label>
+          <mark-label id='3'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[none:year_added:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[none:year_added:qk]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[pcto:sum:movies_added:qk]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[:Measure Names]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2016</value>
+                <value>0.041265698907192956</value>
+                <value>&quot;[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[sum:movies_added:qk]&quot;</value>
+                <value>253.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='0.375' y='32' />
+          </mark-label>
+          <mark-label id='4'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[none:year_added:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[none:year_added:qk]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[pcto:sum:movies_added:qk]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[:Measure Names]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2020</value>
+                <value>0.20942749959223617</value>
+                <value>&quot;[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[sum:tv_shows_added:qk]&quot;</value>
+                <value>595.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='0.5' y='0.477387' />
+          </mark-label>
+          <mark-label id='5'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[none:year_added:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[none:year_added:qk]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[pcto:sum:movies_added:qk]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[:Measure Names]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2019</value>
+                <value>0.23226227369107813</value>
+                <value>&quot;[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[sum:movies_added:qk]&quot;</value>
+                <value>1424.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='15' y='0.943515' />
+          </mark-label>
+          <mark-label id='6'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[none:year_added:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[none:year_added:qk]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[pcto:sum:movies_added:qk]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[:Measure Names]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2014</value>
+                <value>0.0030990050562714074</value>
+                <value>&quot;[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[sum:movies_added:qk]&quot;</value>
+                <value>19.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='0.6875' y='65' />
+          </mark-label>
+          <mark-label id='7'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[none:year_added:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[none:year_added:qk]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[pcto:sum:movies_added:qk]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[:Measure Names]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2013</value>
+                <value>0.00097863317566465493</value>
+                <value>&quot;[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[sum:movies_added:qk]&quot;</value>
+                <value>6.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='0.4375' y='28' />
+          </mark-label>
+          <mark-label id='8'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[none:year_added:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[none:year_added:qk]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[pcto:sum:movies_added:qk]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[:Measure Names]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2012</value>
+                <value>0.00048931658783232747</value>
+                <value>&quot;[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[sum:movies_added:qk]&quot;</value>
+                <value>3.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='0.5625' y='29' />
+          </mark-label>
+          <mark-label id='9'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[none:year_added:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[none:year_added:qk]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[pcto:sum:movies_added:qk]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[:Measure Names]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2011</value>
+                <value>0.0021203718806067527</value>
+                <value>&quot;[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[sum:movies_added:qk]&quot;</value>
+                <value>13.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='0.5625' y='30' />
+          </mark-label>
+          <mark-label id='10'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[none:year_added:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[none:year_added:qk]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[pcto:sum:movies_added:qk]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[:Measure Names]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2010</value>
+                <value>0.00016310552927744252</value>
+                <value>&quot;[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[sum:movies_added:qk]&quot;</value>
+                <value>1.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='0.625' y='30' />
+          </mark-label>
+          <mark-label id='11'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[none:year_added:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[none:year_added:qk]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[pcto:sum:movies_added:qk]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[:Measure Names]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2009</value>
+                <value>0.00032621105855488503</value>
+                <value>&quot;[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[sum:movies_added:qk]&quot;</value>
+                <value>2.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='0.5' y='30' />
+          </mark-label>
+          <mark-label id='12'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[none:year_added:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[none:year_added:qk]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[pcto:sum:movies_added:qk]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[:Measure Names]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2009</value>
+                <value>0.00032621105855488503</value>
+                <value>&quot;[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[sum:tv_shows_added:qk]&quot;</value>
+                <value>0.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='0.5' y='78' />
+          </mark-label>
+          <mark-label id='13'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[none:year_added:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[none:year_added:qk]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[pcto:sum:movies_added:qk]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[:Measure Names]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2010</value>
+                <value>0.00016310552927744252</value>
+                <value>&quot;[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[sum:tv_shows_added:qk]&quot;</value>
+                <value>0.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='0.5625' y='75' />
+          </mark-label>
+          <mark-label id='14'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[none:year_added:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[none:year_added:qk]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[pcto:sum:movies_added:qk]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[:Measure Names]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2011</value>
+                <value>0.0021203718806067527</value>
+                <value>&quot;[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[sum:tv_shows_added:qk]&quot;</value>
+                <value>0.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='0.625' y='82' />
+          </mark-label>
+          <mark-label id='15'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[none:year_added:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[none:year_added:qk]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[pcto:sum:movies_added:qk]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[:Measure Names]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2012</value>
+                <value>0.00048931658783232747</value>
+                <value>&quot;[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[sum:tv_shows_added:qk]&quot;</value>
+                <value>0.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='0.5625' y='76' />
+          </mark-label>
+          <mark-label id='16'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[none:year_added:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[none:year_added:qk]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[pcto:sum:movies_added:qk]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[:Measure Names]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2013</value>
+                <value>0.00097863317566465493</value>
+                <value>&quot;[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[sum:tv_shows_added:qk]&quot;</value>
+                <value>5.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='0.4375' y='73' />
+          </mark-label>
+          <mark-label id='17'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[none:year_added:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[none:year_added:qk]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[pcto:sum:movies_added:qk]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[:Measure Names]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2014</value>
+                <value>0.0030990050562714074</value>
+                <value>&quot;[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[sum:tv_shows_added:qk]&quot;</value>
+                <value>5.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='0.625' y='30' />
+          </mark-label>
+          <mark-label id='18'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[none:year_added:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[none:year_added:qk]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[pcto:sum:movies_added:qk]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[:Measure Names]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2015</value>
+                <value>0.0091339096395367803</value>
+                <value>&quot;[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[sum:movies_added:qk]&quot;</value>
+                <value>56.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='0.5625' y='32' />
+          </mark-label>
+          <mark-label id='19'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[none:year_added:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[none:year_added:qk]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[pcto:sum:movies_added:qk]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[:Measure Names]</field>
+                  <field>[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2015</value>
+                <value>0.0091339096395367803</value>
+                <value>&quot;[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[sum:tv_shows_added:qk]&quot;</value>
+                <value>26.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='15' y='18' />
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{CDE92752-2EC8-4FAA-8E88-3212F6C7D3E7}' />
+    </worksheet>
+    <worksheet name='Freshness vs Titles added'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#ffffff'>Freshness vs Titles added</run>
+          </formatted-text>
+        </title>
+        <caption>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Tableau Light'>Freshness vs Titles Added (Dual-Axis Chart)</run>
+            <run>Æ&#10;&#10;</run>
+            <run fontcolor='#000000' fontname='Tableau Light'>In early years, Netflix added older content (high average lag ~20 years).</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#000000' fontname='Tableau Light'>Post-2015, the </run>
+            <run bold='true' fontcolor='#000000' fontname='Tableau Light'><![CDATA[average lag dropped sharply (<5 years)]]></run>
+            <run fontcolor='#000000' fontname='Tableau Light'> as Netflix shifted toward fresher, newer releases.</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#000000' fontname='Tableau Light'>Peak in </run>
+            <run bold='true' fontcolor='#000000' fontname='Tableau Light'>2019</run>
+            <run fontcolor='#000000' fontname='Tableau Light'>: maximum titles added (~2000) with high freshness — Netflix’s golden expansion year. </run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='freshness_by_year' name='federated.0i0g2u40oxqwm71cjo2oj0vdz5cv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0i0g2u40oxqwm71cjo2oj0vdz5cv'>
+            <column caption='Avg Lag Years' datatype='real' name='[avg_lag_years]' role='measure' type='quantitative' />
+            <column-instance column='[year_added]' derivation='None' name='[none:year_added:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[avg_lag_years]' derivation='Sum' name='[sum:avg_lag_years:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[titles_added]' derivation='Sum' name='[sum:titles_added:qk]' pivot='key' type='quantitative' />
+            <column caption='Titles Added' datatype='integer' name='[titles_added]' role='measure' type='quantitative' />
+            <column caption='Year Added' datatype='integer' name='[year_added]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0i0g2u40oxqwm71cjo2oj0vdz5cv].[sum:titles_added:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0i0g2u40oxqwm71cjo2oj0vdz5cv].[sum:titles_added:qk]' palette='red_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0i0g2u40oxqwm71cjo2oj0vdz5cv].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0i0g2u40oxqwm71cjo2oj0vdz5cv].[sum:avg_lag_years:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0i0g2u40oxqwm71cjo2oj0vdz5cv].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0i0g2u40oxqwm71cjo2oj0vdz5cv].[sum:titles_added:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0i0g2u40oxqwm71cjo2oj0vdz5cv].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#ffffff' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0i0g2u40oxqwm71cjo2oj0vdz5cv].[sum:avg_lag_years:qk] + [federated.0i0g2u40oxqwm71cjo2oj0vdz5cv].[sum:titles_added:qk])</rows>
+        <cols>[federated.0i0g2u40oxqwm71cjo2oj0vdz5cv].[none:year_added:qk]</cols>
+      </table>
+      <simple-id uuid='{792A5639-4B6E-423F-A56C-6BEEE4DDF369}' />
+    </worksheet>
+    <worksheet name='Movies vs TV shows'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#ffffff'>Movies vs TV shows</run>
+          </formatted-text>
+        </title>
+        <caption>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Tableau Light'>Movies vs TV Shows (Pie Chart)</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#000000' fontname='Tableau Light'>Movies dominate Netflix’s catalog (~70%), while TV Shows account for ~30%.</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#000000' fontname='Tableau Light'>This highlights Netflix’s stronger focus on films historically, though TV Shows have been steadily increasing in later years. Type, % of Total Count and sum of Count.  Color shows details about Type.  Size shows sum of Count.  The marks are labeled by Type, % of Total Count and sum of Count.</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='movies_vs_tv' name='federated.071lumz1ec2e921b8l6el09l9322' />
+          </datasources>
+          <datasource-dependencies datasource='federated.071lumz1ec2e921b8l6el09l9322'>
+            <column caption='Count' datatype='integer' name='[count]' role='measure' type='quantitative' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[count]' derivation='Sum' name='[pcto:sum:count:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[count]' derivation='Sum' name='[sum:count:qk]' pivot='key' type='quantitative' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.071lumz1ec2e921b8l6el09l9322].[none:type:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Movie&quot;</bucket>
+              <bucket>&quot;TV Show&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='pane'>
+            <format attr='background-color' data-class='subtotal' scope='cols' value='#ffffff' />
+            <format attr='background-color' data-class='total' value='#ffffff' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.071lumz1ec2e921b8l6el09l9322].[none:type:nk]' />
+              <wedge-size column='[federated.071lumz1ec2e921b8l6el09l9322].[sum:count:qk]' />
+              <size column='[federated.071lumz1ec2e921b8l6el09l9322].[sum:count:qk]' />
+              <text column='[federated.071lumz1ec2e921b8l6el09l9322].[none:type:nk]' />
+              <text column='[federated.071lumz1ec2e921b8l6el09l9322].[pcto:sum:count:qk]' />
+              <text column='[federated.071lumz1ec2e921b8l6el09l9322].[sum:count:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.071lumz1ec2e921b8l6el09l9322].[none:type:nk]</run>
+                <run>&gt;&#10;&lt;</run>
+                <run>[federated.071lumz1ec2e921b8l6el09l9322].[sum:count:qk]</run>
+                <run>&gt;   &#10;&lt;</run>
+                <run>[federated.071lumz1ec2e921b8l6el09l9322].[pcto:sum:count:qk]</run>
+                <run>&gt;&#10;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.8350828886032104' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#ffffff' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{513BCB54-1679-4230-8CB0-3820BA2C3C19}' />
+    </worksheet>
+    <worksheet name='Ratings Distribution'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Ratings Distribution</run>
+          </formatted-text>
+        </title>
+        <caption>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Tableau Light'>Ratings Distribution (Horizontal Bar Chart)</run>
+            <run>Æ&#10;&#10;</run>
+            <run bold='true' fontcolor='#000000' fontname='Tableau Light'>TV-MA (Mature Audiences)</run>
+            <run fontcolor='#000000' fontname='Tableau Light'> is the most common rating (~36%), followed by </run>
+            <run bold='true' fontcolor='#000000' fontname='Tableau Light'>TV-14 (~25%)</run>
+            <run fontcolor='#000000' fontname='Tableau Light'>.</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#000000' fontname='Tableau Light'>This shows Netflix’s focus on adult and teen-friendly content.</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#000000' fontname='Tableau Light'>Family/children’s content (TV-Y, PG, TV-G) exists but represents a smaller share. </run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ratings_distribution' name='federated.0m0ac0e0l91m1t14oauqb066wx26' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0m0ac0e0l91m1t14oauqb066wx26'>
+            <column-instance column='[rating]' derivation='None' name='[none:rating:nk]' pivot='key' type='nominal' />
+            <column-instance column='[title_count]' derivation='Sum' name='[pcto:sum:title_count:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' type='PctTotal' />
+            </column-instance>
+            <column caption='Rating' datatype='string' name='[rating]' role='dimension' type='nominal' />
+            <column-instance column='[title_count]' derivation='Sum' name='[sum:title_count:qk]' pivot='key' type='quantitative' />
+            <column caption='Title Count' datatype='integer' name='[title_count]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0m0ac0e0l91m1t14oauqb066wx26].[none:rating:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:rating:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:rating:nk]' member='&quot;66 min&quot;' />
+                <groupfilter function='member' level='[none:rating:nk]' member='&quot;74 min&quot;' />
+                <groupfilter function='member' level='[none:rating:nk]' member='&quot;84 min&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0m0ac0e0l91m1t14oauqb066wx26].[none:rating:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0m0ac0e0l91m1t14oauqb066wx26].[sum:title_count:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0m0ac0e0l91m1t14oauqb066wx26].[none:rating:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0m0ac0e0l91m1t14oauqb066wx26].[sum:title_count:qk]' />
+              <text column='[federated.0m0ac0e0l91m1t14oauqb066wx26].[pcto:sum:title_count:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#ff2600' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0m0ac0e0l91m1t14oauqb066wx26].[none:rating:nk]</rows>
+        <cols>[federated.0m0ac0e0l91m1t14oauqb066wx26].[sum:title_count:qk]</cols>
+      </table>
+      <simple-id uuid='{AB830F16-A7FB-45B0-AE47-9CE4A23C9A65}' />
+    </worksheet>
+    <worksheet name='Top 10 Actors  (First Billed)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>Top 10 Actors  (First Billed)</run>
+          </formatted-text>
+        </title>
+        <caption>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Analysis:</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book'> First-billed actors like Shah Rukh Khan and Akshay Kumar lead Netflix’s catalog, showing Bollywood stars drive significant visibility. Western stars such as Adam Sandler and Nicolas Cage also feature in the global top 10. </run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='top_actors_first_billed' name='federated.0xiha0019tze2m1d69n3f1exc6ca' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xiha0019tze2m1d69n3f1exc6ca'>
+            <column caption='Actor' datatype='string' name='[actor]' role='dimension' type='nominal' />
+            <column-instance column='[actor]' derivation='None' name='[none:actor:nk]' pivot='key' type='nominal' />
+            <column-instance column='[title_count]' derivation='Sum' name='[pcto:sum:title_count:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[title_count]' derivation='Sum' name='[sum:title_count:qk]' pivot='key' type='quantitative' />
+            <column caption='Title Count' datatype='integer' name='[title_count]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0xiha0019tze2m1d69n3f1exc6ca].[none:actor:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([title_count])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:actor:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0xiha0019tze2m1d69n3f1exc6ca].[none:actor:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0xiha0019tze2m1d69n3f1exc6ca].[sum:title_count:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0xiha0019tze2m1d69n3f1exc6ca].[none:actor:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0xiha0019tze2m1d69n3f1exc6ca].[pcto:sum:title_count:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#ff2600' />
+                <format attr='mark-transparency' value='255' />
+                <format attr='has-stroke' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0xiha0019tze2m1d69n3f1exc6ca].[none:actor:nk]</rows>
+        <cols>[federated.0xiha0019tze2m1d69n3f1exc6ca].[sum:title_count:qk]</cols>
+      </table>
+      <simple-id uuid='{52401439-9E88-44C0-A1D1-B38D7CCA03DE}' />
+    </worksheet>
+    <worksheet name='Top 10 Director'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#ffffff'>Top 10 Director</run>
+          </formatted-text>
+        </title>
+        <caption>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Tableau Light'>Top 10 Directors (Horizontal Bar Chart)</run>
+            <run>Æ&#10;&#10;</run>
+            <run fontcolor='#000000' fontname='Tableau Light'>A few directors (e.g., </run>
+            <run bold='true' fontcolor='#000000' fontname='Tableau Light'>Rajiv Chilaka, Martin Scorsese, Steven Spielberg</run>
+            <run fontcolor='#000000' fontname='Tableau Light'>) contribute multiple titles.</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#000000' fontname='Tableau Light'>Highlights Netflix’s mix of mainstream Hollywood and regional directors (India, Middle East).</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#000000' fontname='Tableau Light'>Shows reliance on both global cinema legends and regional creators. </run>
+            <run fontname='Tableau Light'>Sum of Title Count for each Director.  The marks are labeled by % of Total Title Count. The view is filtered on Director, which keeps 10 of 50 members.</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='top_directors' name='federated.0stzkpm1pkdjg316a8bpf0i6ryqj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0stzkpm1pkdjg316a8bpf0i6ryqj'>
+            <column caption='Director' datatype='string' name='[director]' role='dimension' type='nominal' />
+            <column-instance column='[director]' derivation='None' name='[none:director:nk]' pivot='key' type='nominal' />
+            <column-instance column='[title_count]' derivation='Sum' name='[pcto:sum:title_count:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[title_count]' derivation='Sum' name='[sum:title_count:qk]' pivot='key' type='quantitative' />
+            <column caption='Title Count' datatype='integer' name='[title_count]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0stzkpm1pkdjg316a8bpf0i6ryqj].[none:director:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([director])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:director:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0stzkpm1pkdjg316a8bpf0i6ryqj].[none:director:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0stzkpm1pkdjg316a8bpf0i6ryqj].[sum:title_count:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0stzkpm1pkdjg316a8bpf0i6ryqj].[none:director:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <text column='[federated.0stzkpm1pkdjg316a8bpf0i6ryqj].[pcto:sum:title_count:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#ff2600' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0stzkpm1pkdjg316a8bpf0i6ryqj].[none:director:nk]</rows>
+        <cols>[federated.0stzkpm1pkdjg316a8bpf0i6ryqj].[sum:title_count:qk]</cols>
+      </table>
+      <simple-id uuid='{D62E29B2-B5BB-488F-8060-58E64AF69FFA}' />
+    </worksheet>
+    <worksheet name='Top 10 Genres'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#ffffff'>Top 10 Genres</run>
+          </formatted-text>
+        </title>
+        <caption>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Tableau Light'>Top 10 Genres (Horizontal Bar Chart)</run>
+            <run>Æ&#10;&#10;</run>
+            <run bold='true' fontcolor='#000000' fontname='Tableau Light'>Dramas</run>
+            <run fontcolor='#000000' fontname='Tableau Light'> and </run>
+            <run bold='true' fontcolor='#000000' fontname='Tableau Light'>Comedies</run>
+            <run fontcolor='#000000' fontname='Tableau Light'> dominate, accounting for nearly </run>
+            <run bold='true' fontcolor='#000000' fontname='Tableau Light'>40% of all titles combined</run>
+            <run fontcolor='#000000' fontname='Tableau Light'>.</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#000000' fontname='Tableau Light'>Action, Documentaries, and International TV Shows form the mid-tier.</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#000000' fontname='Tableau Light'>Niche genres like Stand-Up Comedy and Horror Movies are present but much smaller. </run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='top_genres' name='federated.1bu2ij71qdu01m17vuj8q1q669m9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bu2ij71qdu01m17vuj8q1q669m9'>
+            <column caption='Genre' datatype='string' name='[genre]' role='dimension' type='nominal' />
+            <column-instance column='[genre]' derivation='None' name='[none:genre:nk]' pivot='key' type='nominal' />
+            <column-instance column='[title_count]' derivation='Sum' name='[pcto:sum:title_count:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[title_count]' derivation='Sum' name='[sum:title_count:qk]' pivot='key' type='quantitative' />
+            <column caption='Title Count' datatype='integer' name='[title_count]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1bu2ij71qdu01m17vuj8q1q669m9].[none:genre:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1bu2ij71qdu01m17vuj8q1q669m9].[sum:title_count:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1bu2ij71qdu01m17vuj8q1q669m9].[sum:title_count:qk]' />
+              <text column='[federated.1bu2ij71qdu01m17vuj8q1q669m9].[pcto:sum:title_count:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.1bu2ij71qdu01m17vuj8q1q669m9].[pcto:sum:title_count:qk]</run>
+                <run>&gt;&#10;&lt;</run>
+                <run>[federated.1bu2ij71qdu01m17vuj8q1q669m9].[sum:title_count:qk]</run>
+                <run>&gt;&#10;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#ff2600' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1bu2ij71qdu01m17vuj8q1q669m9].[none:genre:nk]</rows>
+        <cols>[federated.1bu2ij71qdu01m17vuj8q1q669m9].[sum:title_count:qk]</cols>
+      </table>
+      <simple-id uuid='{FD3BD0B5-DC21-46B0-BE0D-F0823953BA3A}' />
+    </worksheet>
+    <worksheet name='Top Countries (Filled Map)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>Top Countries (Filled Map)</run>
+          </formatted-text>
+        </title>
+        <caption>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Analysis:</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book'> Netflix’s catalog is heavily concentrated in the United States (2,818 titles), followed by India (972) and the United Kingdom (419), showing a strong dominance in large content-producing and English-speaking markets. </run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='top_countries' name='federated.0n58sz702gdymx1fmqlk41y8li0z' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0n58sz702gdymx1fmqlk41y8li0z'>
+            <column-instance column='[title_count]' derivation='Count' name='[cnt:title_count:qk]' pivot='key' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[title_count]' derivation='Sum' name='[sum:title_count:qk]' pivot='key' type='quantitative' />
+            <column caption='Title Count' datatype='integer' name='[title_count]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0n58sz702gdymx1fmqlk41y8li0z].[cnt:title_count:qk]' included-values='in-range'>
+            <min>1</min>
+            <max>10</max>
+          </filter>
+          <slices>
+            <column>[federated.0n58sz702gdymx1fmqlk41y8li0z].[cnt:title_count:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='band-color' scope='cols' value='#000000' />
+            <format attr='background-color' value='#000000' />
+            <format attr='band-color' scope='rows' value='#000000' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0n58sz702gdymx1fmqlk41y8li0z].[sum:title_count:qk]' num-steps='5' palette='red_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='cols' value='#000000' />
+            <format attr='background-color' value='#000000' />
+            <format attr='band-color' scope='rows' value='#000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+            <format attr='band-size' scope='cols' value='1' />
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='dark' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.0n58sz702gdymx1fmqlk41y8li0z].[sum:title_count:qk]' />
+              <text column='[federated.0n58sz702gdymx1fmqlk41y8li0z].[sum:title_count:qk]' />
+              <text column='[federated.0n58sz702gdymx1fmqlk41y8li0z].[none:country:nk]' />
+              <lod column='[federated.0n58sz702gdymx1fmqlk41y8li0z].[none:country:nk]' />
+              <geometry column='[federated.0n58sz702gdymx1fmqlk41y8li0z].[Geometry (generated)]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='10'>&lt;</run>
+                <run bold='true' fontsize='10'>[federated.0n58sz702gdymx1fmqlk41y8li0z].[sum:title_count:qk]</run>
+                <run bold='true' fontsize='10'>&gt;</run>
+                <run bold='true' fontsize='10'>Æ&#10;</run>
+                <run bold='true' fontsize='10'><![CDATA[<[federated.0n58sz702gdymx1fmqlk41y8li0z].[none:country:nk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0n58sz702gdymx1fmqlk41y8li0z].[Latitude (generated)]</rows>
+        <cols>[federated.0n58sz702gdymx1fmqlk41y8li0z].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{EEC0225E-CFB4-46D7-907B-08A5F6583F13}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='NETFLIX CONTENT TRENDS DASHBOARD '>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#ffffff' fontname='Benton Sans Book'>NETFLIX CONTENT TRENDS DASHBOARD </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#000000' />
+        </style-rule>
+      </style>
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='23' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97916' id='26' param='vert' type-v2='layout-flow' w='98652' x='674' y='1042'>
+            <zone h='5078' id='27' type-v2='title' w='98652' x='674' y='1042'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='92838' id='24' type-v2='layout-basic' w='98652' x='674' y='6120' />
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone forceUpdate='true' h='11328' id='21' is-scaled='1' param='/Users/aaratmapara/Downloads/Logonetflix.png' type-v2='bitmap' w='28896' x='33109' y='6120' />
+        <zone h='26823' id='22' name='Movies vs TV shows' w='24010' x='5055' y='5339' />
+        <zone h='38411' id='28' name='Content added per year' w='30329' x='35552' y='19922' />
+        <zone h='34115' id='29' name='Ratings Distribution' w='34625' x='-1011' y='33854' />
+        <zone h='24870' id='30' name='Freshness vs Titles added' w='32266' x='67228' y='7813' />
+        <zone h='30208' id='31' name='Top Countries (Filled Map)' w='42965' x='33361' y='62240' />
+        <zone h='31120' id='33' name='Top 10 Genres' w='29992' x='-84' y='67708' />
+        <zone h='29818' id='34' name='Top 10 Actors  (First Billed)' w='29655' x='69503' y='34896' />
+        <zone h='32813' id='35' name='Top 10 Director' w='28222' x='75990' y='67318' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run fontalignment='1' fontcolor='#ffffff' fontname='Benton Sans Book'>NETFLIX CONTENT TRENDS DASHBOARD </run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='2200' minheight='2200' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='37' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97916' id='36' param='vert' type-v2='layout-flow' w='98652' x='674' y='1042'>
+                <zone h='5078' id='27' type-v2='title' w='98652' x='674' y='1042'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='214' h='26823' id='22' is-fixed='true' name='Movies vs TV shows' w='24010' x='5055' y='5339'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='91' forceUpdate='true' h='11328' id='21' is-fixed='true' is-scaled='1' param='/Users/aaratmapara/Downloads/Logonetflix.png' type-v2='bitmap' w='28896' x='33109' y='6120'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='198' h='24870' id='30' is-fixed='true' name='Freshness vs Titles added' w='32266' x='67228' y='7813'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38411' id='28' is-fixed='true' name='Content added per year' w='30329' x='35552' y='19922'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='273' h='34115' id='29' is-fixed='true' name='Ratings Distribution' w='34625' x='-1011' y='33854'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='239' h='29818' id='34' is-fixed='true' name='Top 10 Actors  (First Billed)' w='29655' x='69503' y='34896'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='242' h='30208' id='31' is-fixed='true' name='Top Countries (Filled Map)' w='42965' x='33361' y='62240'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='262' h='32813' id='35' is-fixed='true' name='Top 10 Director' w='28222' x='75990' y='67318'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='249' h='31120' id='33' is-fixed='true' name='Top 10 Genres' w='29992' x='-84' y='67708'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{F68BBFA0-874F-4529-8992-CFAE3212D011}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='260'>
+    <window class='worksheet' name='Movies vs TV shows'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.071lumz1ec2e921b8l6el09l9322].[none:type:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.071lumz1ec2e921b8l6el09l9322].[sum:count:qk]' type='size' />
+            <card param='[federated.071lumz1ec2e921b8l6el09l9322].[none:type:nk]' type='highlighter' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='94'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{A719FD9D-1E3D-479A-97E0-D5BEACBD9F56}' />
+    </window>
+    <window class='worksheet' name='Content added per year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0hz2afw0rfzvxi14c4yfs0gyhbzp].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='94'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{03DC82D3-8F8B-4940-86C8-150C881F3A37}' />
+    </window>
+    <window class='worksheet' name='Top Countries (Filled Map)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0n58sz702gdymx1fmqlk41y8li0z].[sum:title_count:qk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='94'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{BC8AF1F5-4E6F-4F21-92DC-AE5E1F1D35B5}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Ratings Distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='2147483647'>
+            <card type='caption' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='0'>
+            <card pane-specification-id='0' param='[federated.0m0ac0e0l91m1t14oauqb066wx26].[sum:title_count:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{72D016FD-56D3-46B6-B19F-9FC224766FD7}' />
+    </window>
+    <window class='worksheet' name='Top 10 Genres'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='2147483647'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{4B18F61B-04FC-4426-96B8-A09AB4CD1B05}' />
+    </window>
+    <window class='worksheet' name='Top 10 Director'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='2147483647'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{4EBEE965-B511-43BE-8F16-B00C8701A25A}' />
+    </window>
+    <window class='worksheet' name='Freshness vs Titles added'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0i0g2u40oxqwm71cjo2oj0vdz5cv].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='2147483647'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DFFE5A08-CB6D-41C6-815A-850FB68A42DE}' />
+    </window>
+    <window class='worksheet' name='Top 10 Actors  (First Billed)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='94'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{8FE0810C-808E-4A90-992E-2CFC4E8E85B6}' />
+    </window>
+    <window class='dashboard' name='NETFLIX CONTENT TRENDS DASHBOARD '>
+      <viewpoints>
+        <viewpoint name='Content added per year'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Freshness vs Titles added'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Movies vs TV shows'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Ratings Distribution'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Top 10 Actors  (First Billed)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Top 10 Director'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Top 10 Genres'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Top Countries (Filled Map)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='22' />
+      <grid grid-overlay-mode='on' />
+      <simple-id uuid='{A918712A-4ECE-41E9-B767-65E559771CB4}' />
+    </window>
+  </windows>
+</workbook>

@@ -9,6 +9,11 @@ We use SQL to prepare datasets and Tableau for interactive visualizations, combi
 - Source: [Netflix Movies and TV Shows Dataset (Kaggle)](https://www.kaggle.com/shivamb/netflix-shows)  
 - Contains metadata on 8,800+ titles (movies & TV shows), including type, release year, country, rating, duration, genre, cast, and description.  
 
+##  Dashboard Highlights
+
+
+![Netflix Dashboard](assets/netflix_content_trends_dashboard.png)
+
 ## Visuals in Dashboard  
 1. **Movies vs TV Shows (Pie Chart)** → Overall split of content type.  
 2. **Content Added per Year (Bar Chart)** → Growth trend over time.  
